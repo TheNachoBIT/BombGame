@@ -1,0 +1,36 @@
+body
+{
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	margin: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.full
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.square-box
+{
+	width: 60vmin;
+	height: 60vmin;
+	display: flex;
+	border: 1px solid white;
+	flex-wrap: wrap;
+	transform: rotate(45deg);
+}
+
+.square
+{
+	width: 40%;
+	height: 40%;
+	margin: 5%;
+	border: 1px solid white;
+}

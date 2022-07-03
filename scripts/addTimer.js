@@ -1,0 +1,1 @@
+document.body.innerHTML += `<embed type="text/html" src="timer.html" data-raw>`;
