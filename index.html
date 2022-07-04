@@ -187,6 +187,9 @@ window.onmessage = function(e) {
 				document.querySelector(".gameOver").style.display = "block";
 				ticktock.pause();
 		}
+		else if(e.data == 'win-game') {
+				ticktock.pause();
+		}
 };
 
 document.querySelector("tw-story").innerHTML += `<embed type="text/html" src="timer.html" width="400px" height="200px" class="timerTwine" id="timer-iframe" data-raw>`;
@@ -247,6 +250,7 @@ Fin.
 &lt;script&gt;
 	const iframe = document.querySelector(&#39;#timer-iframe&#39;);
 	iframe.remove();
+	window.top.postMessage(&#39;win-game&#39;, &#39;*&#39;);
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="Inicio" tags="" position="617,217" size="100,100">&lt;title&gt;El juego de la bomba&lt;/title&gt;
 
 Has despertado en el aula 1507 de la UAI, alguien por alguna razón te ha encerrado y quiere matarte tienes unos pocos minutos para desactivar una bomba atreves de tres juegos, si logras desactivar la bomba estarás liberado de lo contario morirás sin saber quien te ha hecho esto.
