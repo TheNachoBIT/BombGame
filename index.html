@@ -115,6 +115,8 @@ var timerAlreadyEnabled = true;
 var tickTockAudioPlayed = false;
 var ticktock = new Audio("audio/ticktock.mp3");
 
+document.title = "La bomba";
+
 ticktock.ontimeupdate= function(i) {
   if((this.currentTime / this.duration)>0.9){
     this.currentTime = 0;
@@ -245,7 +247,9 @@ Fin.
 &lt;script&gt;
 	const iframe = document.querySelector(&#39;#timer-iframe&#39;);
 	iframe.remove();
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="Inicio" tags="" position="617,217" size="100,100">Has despertado en el aula 1507 de la UAI, alguien por alguna razón te ha encerrado y quiere matarte tienes unos pocos minutos para desactivar una bomba atreves de tres juegos, si logras desactivar la bomba estarás liberado de lo contario morirás sin saber quien te ha hecho esto.
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="Inicio" tags="" position="617,217" size="100,100">&lt;title&gt;El juego de la bomba&lt;/title&gt;
+
+Has despertado en el aula 1507 de la UAI, alguien por alguna razón te ha encerrado y quiere matarte tienes unos pocos minutos para desactivar una bomba atreves de tres juegos, si logras desactivar la bomba estarás liberado de lo contario morirás sin saber quien te ha hecho esto.
 
 [[Comenzar|Volver al inicio]]
 
